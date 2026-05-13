@@ -1,0 +1,14 @@
+        [build-system]
+        requires = ["setuptools>=68"]
+        build-backend = "setuptools.build_meta"
+
+        [project]
+        name = "music_studio"
+        version = "0.1.0"
+        description = "Music-release workflow orchestrator: stems -> covers -> MP4 -> upload."
+        requires-python = ">=3.10"
+        dependencies = [
+    "Pillow",
+    "google-api-python-client",
+    "youtube_publisher @ git+https://github.com/MarkAnthonyKoop/youtube_publisher.git",
+]
