@@ -1,0 +1,18 @@
+{
+  "repo_url": "https://github.com/MarkAnthonyKoop/cc_atoms/tree/middlematter-releases/fog",
+  "files": {
+    "fog_guitar.pdf": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar.pdf",
+    "fog_guitar.musicxml": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar.musicxml",
+    "fog_guitar_basic_pitch.mid": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar_basic_pitch.mid",
+    "fog_guitar_notes.tsv": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar_notes.tsv",
+    "fog_guitar_summary.json": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar_summary.json",
+    "fog_guitar.tab": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_guitar.tab",
+    "fog_vocals.pdf": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_vocals.pdf",
+    "fog_vocals.musicxml": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_vocals.musicxml",
+    "fog_vocals_basic_pitch.mid": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_vocals_basic_pitch.mid",
+    "fog_vocals_notes.tsv": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_vocals_notes.tsv",
+    "fog_vocals_summary.json": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_vocals_summary.json",
+    "fog_original.mp3": "https://raw.githubusercontent.com/MarkAnthonyKoop/cc_atoms/middlematter-releases/fog/fog_original.mp3"
+  },
+  "note": "Temporary host on cc_atoms/middlematter-releases branch; will move to its own repo when admin scope is available."
+}
