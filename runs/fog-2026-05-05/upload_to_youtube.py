@@ -11,6 +11,7 @@ import json
 import sys
 from pathlib import Path
 
+from youtube_publisher.credentials import pick_client_secrets
 from youtube_publisher.upload import upload_video, PRIVACY_PUBLIC
 
 
@@ -19,11 +20,11 @@ LABEL = "MiddleMatter Music"
 RELEASE_DATE = "2026-05-06"
 RUN_DIR = Path(__file__).parent
 
-# The cached token at ~/.cache/youtube_publisher/token_677495352.pickle was made
-# against this specific client_secret JSON. The auto-picker would otherwise grab
-# the alphabetically-first JSON (1013...-MyEmailApp), which is Internal-only and
-# rejects markanthonykoop@gmail.com with org_internal.
-CLIENT_SECRETS = "/mnt/c/Users/x/Downloads/client_secret_677495352-q1duspp6rlpo0gehpqrlq41rvf08o95f.apps.googleusercontent.com.json"
+# Multiple client_secret JSONs may exist on this machine. Pin to the Google
+# Cloud project whose cached token at ~/.cache/youtube_publisher/ is for an
+# External-type OAuth client. The default auto-picker would otherwise grab an
+# alphabetically-earlier Internal-only client, which rejects non-org accounts.
+CLIENT_SECRETS_PROJECT = "677495352"
 
 VIDEOS = [
     ("(Guitar Stem)",  "fog_guitar.mp4"),
@@ -73,6 +74,8 @@ def main():
         print(json.dumps(plan, indent=2))
         return 0
 
+    client_secrets_path = str(pick_client_secrets(prefer_project=CLIENT_SECRETS_PROJECT).path)
+
     results = []
     for item in plan:
         print(f"\n→ uploading {item['mp4']}", file=sys.stderr)
@@ -81,7 +84,7 @@ def main():
             description=item["description"],
             tags=["Mark Nadon", "MiddleMatter Music", "Fog", "post punk", "garage", "stems"],
             privacy=PRIVACY_PUBLIC, made_for_kids=False,
-            client_secrets_path=CLIENT_SECRETS,
+            client_secrets_path=client_secrets_path,
             progress_stream=sys.stderr,
         )
         print(f"  → {r['url']}", file=sys.stderr)
