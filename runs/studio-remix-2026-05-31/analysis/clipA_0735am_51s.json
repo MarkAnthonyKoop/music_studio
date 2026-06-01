@@ -1,0 +1,32 @@
+{
+  "file": "clipA_0735am_51s.mp3",
+  "duration": 51.52,
+  "tempo_bpm": 161.5,
+  "key": "A# maj",
+  "key_conf": 0.665,
+  "peak_db": -12.2,
+  "mean_db": -16.0,
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 18.53,
+      "dur": 18.53,
+      "energy_db": -16.9,
+      "energy_rank": 3
+    },
+    {
+      "start": 18.53,
+      "end": 40.77,
+      "dur": 22.24,
+      "energy_db": -15.6,
+      "energy_rank": 2
+    },
+    {
+      "start": 42.31,
+      "end": 51.52,
+      "dur": 9.21,
+      "energy_db": -15.2,
+      "energy_rank": 1
+    }
+  ]
+}

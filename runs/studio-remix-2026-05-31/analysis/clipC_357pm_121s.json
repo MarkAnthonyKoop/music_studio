@@ -1,0 +1,60 @@
+{
+  "file": "clipC_357pm_121s.mp3",
+  "duration": 121.24,
+  "tempo_bpm": 112.3,
+  "key": "G min",
+  "key_conf": 0.802,
+  "peak_db": -11.0,
+  "mean_db": -16.7,
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 13.24,
+      "dur": 13.24,
+      "energy_db": -19.9,
+      "energy_rank": 7
+    },
+    {
+      "start": 13.24,
+      "end": 16.09,
+      "dur": 2.85,
+      "energy_db": -19.2,
+      "energy_rank": 6
+    },
+    {
+      "start": 16.09,
+      "end": 41.26,
+      "dur": 25.17,
+      "energy_db": -14.7,
+      "energy_rank": 2
+    },
+    {
+      "start": 41.26,
+      "end": 58.03,
+      "dur": 16.77,
+      "energy_db": -15.5,
+      "energy_rank": 3
+    },
+    {
+      "start": 60.02,
+      "end": 81.64,
+      "dur": 21.62,
+      "energy_db": -17.1,
+      "energy_rank": 4
+    },
+    {
+      "start": 81.64,
+      "end": 88.49,
+      "dur": 6.85,
+      "energy_db": -14.4,
+      "energy_rank": 1
+    },
+    {
+      "start": 88.49,
+      "end": 121.24,
+      "dur": 32.75,
+      "energy_db": -17.2,
+      "energy_rank": 5
+    }
+  ]
+}
